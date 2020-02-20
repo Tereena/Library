@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library</title>
+    <link href="libraryStyle.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <div class="title">
+        <h1>Library</h1>
+    </div>
+
+    <button class="new-book">New Book</button>
+    <div class="form-container">
+        <form id="form">
+            <br>Author:
+            <input type="text" name="author" required>
+            <br>Title:
+            <input type="text" name="title" required>
+            <br>Pages:
+            <input type="number" name="pages" required>
+            <br>Book read?:
+            <input type="radio" name="isRead" value="Yes" checked="true"
+                   required>Yes
+            <input type="radio" name="isRead" value="No" required>No
+            <br>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div class="table-container">
+        <table class="book-table">
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+                <th>Pages</th>
+                <th>Book read?</th>
+                <th id="delete"></th>
+            </tr>
+
+        </table>
+    </div>
+</div>
+<script src="libraryScript.js"></script>
+</body>
+
+</html>
